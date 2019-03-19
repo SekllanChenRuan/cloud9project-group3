@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+ <head>
   <title> Python Programming Tutorial</title>
->>>>>>> 00e0e15123925331d3c314fde059d2aa2a36e15e
+
   <meta name="robots" content="noindex,nofollow" />
   <meta name="viewport" content="width=device-width" />
   <meta charset="utf-8" />
@@ -62,6 +64,14 @@
         top: 0;
     }
 }
+    .code {
+  border-style: solid;
+  border-width: 1px;
+    }
+    pre {
+        margin-left: 15px;
+    }
+ 
     body {
         background-color: beige;
     }     
@@ -74,7 +84,7 @@
      <h1>Python Tutorial Website</h1>
      <nav class="topnav" id="myTopnav">
        <a href="index.html" class="active">Home</a>
-       <a href="http://w3schools.com/python" target="_blank">W3 Schools</a>
+       <a href="https://www.w3schools.com/python" target="_blank">W3 Schools</a>
        <a href="index.html" class="active"> Python Programming Sample </a>
       
      </nav>
@@ -85,33 +95,193 @@
        
        <h2 class="subheader"> What is Python Programming ? </h2>
        
-<<<<<<< HEAD
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam, 
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> <br>
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> 
-             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam, 
-=======
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> <br>
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
->>>>>>> 00e0e15123925331d3c314fde059d2aa2a36e15e
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+      <p>This page will demonstrate a python program and explain the process of it. We will practice using python to create a program that will calculate the total of a meal including tax and tip cost. It will be a simple program, so it will not be perfect.</p> <br>
+         
+         <p>First, let’s look at the complete program before we go over it:</p>  <br> 
+         
+         <div class ="code"><pre><code>
+# mealtotal.py
+
+ 
+# This program will recieve input from user on the 
+# meal amount, tip percent, and tax rate(%).
+# Then it will calculate the total amount.
+ 
+
+# steps
+# 1. input meal amount
+# 2. input tip percent
+# 3. input tax rate
+# 4. calculate 
+# 5. display total
+
+# by sekllan chenruan
+
+#mealAmount function: returns the entered meal amount
+def mealAmount():
+    mealAmount = float(input("Enter the meal amount: "))
+    return mealAmount
+
+#tipPercent function: returns the tip percentage
+def tipPercent():
+    tip = float(input("Enter tip percent: "))
+    return tip
+
+#taxrate function: returns tax rate
+def taxrate():
+    taxrate = float(input("Enter the tax: "))
+    return taxrate
+
+def calculateTip():
+    #calls the mealamount function, tipPercent function, and taxrate function
+    amount = mealAmount()
+    tip = tipPercent()
+    tax = taxrate()
+    
+    #tipamount is amount * tip%
+    tipamount = amount * tip
+    #taxamount is amount * tax rate
+    taxamount = amount * tax
+    
+    #final cost is the sum of everything
+    finalcost = amount + tipamount + taxamount
+    #rounds the finalcost
+    finalcost = round(finalcost,2)
+    display(finalcost)
+
+def display(total):
+    #this function outputs the total
+    print("The total is $", total)
+
+
+def main():
+    #calls calculateTip function
+    calculateTip()
+
+main()
+
+    
+</code></pre></div>
+         
+             <p>There are three things we need for this program. The input from a user, the process where the calculations or algorithm take place, and output of the results to be displayed on the screen. The input we want for this particular program would be the meal amount or cost, the tip percentage, and the tax rate. Next we take these values we received from input and process it. The process in this case is like this:</p> 
+        
+                <div class ="code"><pre><code>
+                    
+    def calculateTip():
+    #calls the mealamount function, tipPercent function, and taxrate function
+    amount = mealAmount()
+    tip = tipPercent()
+    tax = taxrate()
+    
+    #tipamount is amount * tip%
+    tipamount = amount * tip
+    #taxamount is amount * tax rate
+    taxamount = amount * tax
+    
+    #final cost is the sum of everything
+    finalcost = amount + tipamount + taxamount
+    #rounds the finalcost
+    finalcost = round(finalcost,2)
+    display(finalcost)
+    
+</code></pre></div>
+        
+        <br> 
+
+      <p>From the above code we can see that there was three functions called. The mealAmount(), tipPercent(), and taxrate() functions are the input functions.</p> 
+      
+      <br>
+      
+    <div class ="code"><pre><code>
+#mealAmount function: returns the entered meal amount
+def mealAmount():
+    mealAmount = float(input("Enter the meal amount: "))
+    return mealAmount
+
+#tipPercent function: returns the tip percentage
+def tipPercent():
+    tip = float(input("Enter tip percent: "))
+    return tip
+
+#taxrate function: returns tax rate
+def taxrate():
+    taxrate = float(input("Enter the tax: "))
+    return taxrate
+    </code></pre></div>
+      <br>
+      <p>Here are the output prompts:</p>
+      <br>
+      
+      <div class ="code"><pre><code>
+          Enter the meal ammount: 20.00
+          Enter the tip percent: .15
+          Enter the tax: .10
+            </code></pre></div>
+                        <br>
+        <p>As you can see the calculateTip() function calls the mentioned 3 input prompt functions and it stores it into the variables amount, tip, and tax.</p>
+        <br>
+        <div class ="code"><pre><code>
+    def calculateTip():
+    #calls the mealamount function, tipPercent function, and taxrate function
+    amount = mealAmount()
+    tip = tipPercent()
+    tax = taxrate()
+        </code></pre></div>
+        <br>
+        
+        <p>Then the function takes the variables and processes or calculates it and rounds it to 2 decimal place. </p>
+        <br>
+        <div class ="code"><pre><code>
+    #tipamount is amount * tip%
+    tipamount = amount * tip
+    #taxamount is amount * tax rate
+    taxamount = amount * tax
+    
+    #final cost is the sum of everything
+    finalcost = amount + tipamount + taxamount
+    #rounds the finalcost
+    finalcost = round(finalcost,2)
+    display(finalcost)    
+        </code></pre></div>
+        <br>
+        
+        <p>At the end of the function the display() function is called and it passes the finalcost variable through the parameter to the display() function.</p>
+        <br>
+        <div class ="code"><pre><code>
+    def display(total):
+    #this function outputs the total
+    print("The total is $", total)
+        </code></pre></div>
+        <br>
+        
+        <p>The display() function takes the value given to it and prints the final output with the total for the user to see.</p>
+        <br>
        
+       <div class ="code"><pre><code>
+           Enter the meal ammount: 20.00
+           Enter the tip precent: .15
+           Enter the tax: .10
+           The total is $ 25.0
+       </code></pre></div>
+       
+       <br>
+    <p>The calculateTip() function is called at the start of the program, the main() function.</p>
+    <br>
+    <div class ="code"><pre><code>
+def main():
+    #calls calculateTip function
+    calculateTip()
+
+main()
+    </code></pre></div>
+       <br>
+       <p>The main() function calls the calculateTip() function as we can see from the above code, but you have to call main like the last line in the above code in order for main() to run. Once main() is called it starts to call CalculateTip() which calls everything else. This is how this program works, it is how these functions relate and work together.</p>
      
      </div>
   <!-- Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon -->
      
 
  </body>
-<<<<<<< HEAD
 </html>
-=======
 </html>
->>>>>>> 00e0e15123925331d3c314fde059d2aa2a36e15e
